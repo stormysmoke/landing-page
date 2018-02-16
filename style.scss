@@ -13,6 +13,7 @@
 
 html {
   font-size: 1.25em;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,10 +32,10 @@ body {
 
 .title {
   position: absolute;
-  top: 20px;
+  top: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 5em;
+  font-size: 4em;
   color: #E9E9E9;
 }
 
@@ -69,8 +70,51 @@ body {
 
 #sec1 {
   .container {
-    //height: 100%;
     width: 75vw;
+  }
+}
+
+#sec2 {
+  .container {
+    padding-top: 5em;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    //border: 1px solid black;
+  }
+  img {
+    width: 150px;
+  }
+  div[id^=feature] {
+    width: 300px;
+  }
+}
+
+#sec3 {
+  align-items: flex-end;
+  .container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    border: 1px solid black;
+  }
+  div[id^=technique] {
+    width: 45%;
+    height: 25vh;
+    margin: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    p {
+      text-align: left;
+      color: black;
+      padding-left: 20px;
+    }
+  }
+  img {
+    width: 75px;
   }
 }
 

@@ -43,7 +43,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -59,10 +60,10 @@ body {
 
 .title {
   position: absolute;
-  top: 20px;
+  top: 10px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 5em;
+  font-size: 4em;
   color: #E9E9E9; }
 
 .container {
@@ -89,6 +90,39 @@ body {
 
 #sec1 .container {
   width: 75vw; }
+
+#sec2 .container {
+  padding-top: 5em;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between; }
+#sec2 img {
+  width: 150px; }
+#sec2 div[id^=feature] {
+  width: 300px; }
+
+#sec3 {
+  align-items: flex-end; }
+  #sec3 .container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    border: 1px solid black; }
+  #sec3 div[id^=technique] {
+    width: 45%;
+    height: 25vh;
+    margin: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5); }
+    #sec3 div[id^=technique] p {
+      text-align: left;
+      color: black;
+      padding-left: 20px; }
+  #sec3 img {
+    width: 75px; }
 
 #subscribe-input {
   font-size: 1.1em;
