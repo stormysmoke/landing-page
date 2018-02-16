@@ -1,0 +1,142 @@
+/* Reference for horizontally and vertically centering things:
+ * https://www.w3.org/Style/Examples/007/center.en.html */
+
+@import 'backgrounds';
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.25em;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.full {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;      // Vertically center content
+  justify-content: center;  // Horizontally center content
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 5em;
+  color: #E9E9E9;
+}
+
+.container {
+  text-align: center;
+  //border: 1px solid black;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  img {
+    width: 18vw;
+  }
+}
+
+#slogan {
+  font-size: 5em;
+  margin: 0;
+}
+
+#slogan-description {
+  font-size: 1.15em;
+  margin-top: 1.5em;
+}
+
+#slogan-image {
+  width: 100px;
+  margin-top: 1em;
+}
+
+#sec1 {
+  .container {
+    //height: 100%;
+    width: 75vw;
+  }
+}
+
+$subscribe-padding: 15px;
+$subscribe-font-size: 1.1em;
+$subscribe-height: 3em;
+
+#subscribe-input {
+  font-size: $subscribe-font-size;
+  padding: 0 $subscribe-padding;
+  outline: none;
+  width: 18em;
+  border: none;
+  height: $subscribe-height;
+}
+#subscribe-button {
+  outline: none;
+  border: 2px solid white;
+  font-size: $subscribe-font-size;
+  padding: 0 $subscribe-padding;
+  background: transparent;
+  height: $subscribe-height;
+  color: white;
+  &:hover {
+    background: #98CE00;
+    border-color: #98CE00;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+#subscribe-text {
+  font-size: $subscribe-font-size;
+}
+
+footer {
+  background: #191919;
+  height: 35vh;
+  display: flex;
+  color: white;
+  align-items: center;      // Vertically center content
+  justify-content: center;  // Horizontally center content
+  #footer-address {
+    font-size: 0.9em;
+  }
+  #footer-copyright {
+    font-size: 0.75em;
+  }
+}
+
+section[id^="sec"] {
+  position: relative;
+}
+
+#sec1 {
+  color: white;
+}
+
+$color-accent: #E9457C;
+
+a, a:visited {
+  text-decoration: initial;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid $color-accent;
+}
+a:hover, a:active {
+  color: $color-accent;
+}
