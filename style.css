@@ -73,27 +73,29 @@ body {
   width: 100%;
   height: calc(100vh - 120px); }
 
-#logo {
-  position: absolute;
-  top: 10px;
-  left: 10px; }
-  #logo img {
-    width: 18vw; }
-
-#slogan {
-  font-size: 5em;
-  margin: 0; }
-
-#slogan-description {
-  font-size: 1.15em;
-  margin-top: 1.5em; }
-
-#slogan-image {
-  width: 100px;
-  margin-top: 1em; }
-
-#sec1 .container {
-  width: 75vw; }
+#sec1 {
+  text-align: center; }
+  #sec1 #logo {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    #sec1 #logo img {
+      margin-top: 20px; }
+  #sec1 #slogan {
+    font-size: 5em;
+    margin: 0;
+    height: calc(100vh - 200px - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #sec1 #slogan-description {
+    font-size: 1.15em;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; }
 
 #sec2 .wrapper {
   width: 90vw;

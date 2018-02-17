@@ -54,33 +54,35 @@ $title-height: 120px;
   height: calc(100vh - #{$title-height});
 }
 
-#logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  img {
-    width: 18vw;
-  }
-}
-
-#slogan {
-  font-size: 5em;
-  margin: 0;
-}
-
-#slogan-description {
-  font-size: 1.15em;
-  margin-top: 1.5em;
-}
-
-#slogan-image {
-  width: 100px;
-  margin-top: 1em;
-}
-
+$logo-height: 200px;
+$description-height: 200px;
 #sec1 {
-  .container {
-    width: 75vw;
+  text-align: center;
+  #logo {
+    height: $logo-height;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      margin-top: 20px;
+    }
+    
+  }
+  #slogan {
+    font-size: 5em;
+    margin: 0;
+    height: calc(100vh - #{$logo-height} - #{$description-height});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #slogan-description {
+    font-size: 1.15em;
+    height: $description-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 }
 
