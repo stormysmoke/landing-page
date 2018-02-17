@@ -40,7 +40,8 @@ $title-height: 120px;
   align-items: center;
   //background: red;
   h1 {
-    color: #E9E9E9;
+    //color: #E9E9E9;
+    color: white;
     font-size: 4em;
     font-weight: 400;
   }
@@ -141,55 +142,129 @@ $sec3-margin: 50px;
   }
 }
 
+$member-width: 275px;
+$member-padding: 20px;
+#sec4 {
+  .wrapper {
+    //background: blue;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div[id^=member-] {
+      text-align: center;
+      width: $member-width;
+      padding: $member-padding;
+      //background: blue;
+    }
+  }
+  p[class^=member-] {
+    margin: 0;
+  }
+  .member-photo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  .member-name {
+    font-weight: 700;
+  }
+  .member-function {
+  }
+  .member-description {
+    font-size: 0.9em;
+    padding-top: 10px;
+    //background: rgba(255, 255, 255, 0.25);
+  }
+  $icon-height: 40px;
+  .member-contact {
+    width: calc(#{$member-width} - 2 * #{$member-padding});
+    height: $icon-height;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+      .contact-icon {
+        height: $icon-height;
+        margin: 0 5px;
+      }
+  }
+}
+
+
 $subscribe-padding: 15px;
 $subscribe-font-size: 1.1em;
 $subscribe-height: 3em;
 
-#subscribe-input {
-  font-size: $subscribe-font-size;
-  padding: 0 $subscribe-padding;
-  outline: none;
-  width: 18em;
-  border: none;
-  height: $subscribe-height;
-}
-#subscribe-button {
-  outline: none;
-  border: 2px solid white;
-  font-size: $subscribe-font-size;
-  padding: 0 $subscribe-padding;
-  background: transparent;
-  height: $subscribe-height;
-  color: white;
-  &:hover {
-    background: #98CE00;
-    border-color: #98CE00;
-    color: white;
-    cursor: pointer;
+#sec5 {
+  .container {
+    height: 100vh;
+    margin-top: -$title-height;
   }
-}
+  .wrapper {
+    //background: blue;
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      text-align: center;
+      #subscribe-input {
+        font-size: $subscribe-font-size;
+        padding: 0 $subscribe-padding;
+        outline: none;
+        width: 18em;
+        border: none;
+        height: $subscribe-height;
+      }
+      #subscribe-button {
+        outline: none;
+        border: 2px solid white;
+        font-size: $subscribe-font-size;
+        padding: 0 $subscribe-padding;
+        background: transparent;
+        height: $subscribe-height;
+        color: white;
+        &:hover {
+          background: #98CE00;
+          border-color: #98CE00;
+          color: white;
+          cursor: pointer;
+        }
+      }
 
-#subscribe-text {
-  font-size: $subscribe-font-size;
+      #subscribe-text {
+        font-size: $subscribe-font-size;
+        margin-bottom: 50px;
+      }
+    }
+  }
 }
 
 footer {
   background: #191919;
   height: 35vh;
   display: flex;
-  color: white;
-  align-items: center;      // Vertically center content
-  justify-content: center;  // Horizontally center content
-  #footer-address {
-    font-size: 0.9em;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    width: 90vw;
+    text-align: center;
+    #footer-address {
+      font-size: 0.9em;
+      a {
+        text-decoration: none;
+        color: #98CE00A0;
+        border-bottom: 2px solid #98CE00;
+        &:hover {
+          color: #98CE00;
+        }
+      }
+    }
+    #footer-copyright {
+      margin-top: 30px;
+      font-size: 0.75em;
+    }
   }
-  #footer-copyright {
-    font-size: 0.75em;
-  }
-}
-
-section[id^="sec"] {
-  //position: relative;
 }
 
 #sec1 {
@@ -198,7 +273,7 @@ section[id^="sec"] {
 
 $color-accent: #E9457C;
 
-a, a:visited {
+/*a, a:visited {
   text-decoration: initial;
   color: white;
   font-weight: bold;
@@ -206,4 +281,4 @@ a, a:visited {
 }
 a:hover, a:active {
   color: $color-accent;
-}
+}*/
