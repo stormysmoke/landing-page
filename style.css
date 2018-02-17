@@ -53,21 +53,25 @@ body {
 
 .full {
   width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  height: 100vh; }
 
 .title {
-  position: absolute;
-  top: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 4em;
-  color: #E9E9E9; }
+  margin: 0;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .title h1 {
+    color: #E9E9E9;
+    font-size: 4em;
+    font-weight: 400; }
 
 .container {
-  text-align: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 120px); }
 
 #logo {
   position: absolute;
@@ -91,38 +95,42 @@ body {
 #sec1 .container {
   width: 75vw; }
 
-#sec2 .container {
-  padding-top: 5em;
+#sec2 .wrapper {
   width: 90vw;
   display: flex;
-  justify-content: space-between; }
-#sec2 img {
-  width: 150px; }
-#sec2 div[id^=feature] {
-  width: 300px; }
+  justify-content: space-between;
+  align-items: center; }
+  #sec2 .wrapper div[id^=feature] {
+    text-align: center;
+    width: 300px;
+    padding: 20px; }
+    #sec2 .wrapper div[id^=feature] img {
+      width: 150px;
+      margin-bottom: 20px; }
+    #sec2 .wrapper div[id^=feature] p {
+      margin: 0; }
 
-#sec3 {
-  align-items: flex-end; }
-  #sec3 .container {
-    width: 100vw;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    border: 1px solid black; }
-  #sec3 div[id^=technique] {
-    width: 45%;
-    height: 25vh;
-    margin: 25px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.5); }
-    #sec3 div[id^=technique] p {
-      text-align: left;
-      color: black;
-      padding-left: 20px; }
-  #sec3 img {
+#sec3 div[id^=techniques-row-] {
+  display: flex;
+  justify-content: space-between; }
+#sec3 #techniques-row-2 {
+  margin-top: 50px; }
+#sec3 div[id^=technique-] {
+  width: calc((100vw - 3 * 50px) / 2);
+  height: 25vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5); }
+  #sec3 div[id^=technique-] img {
     width: 75px; }
+  #sec3 div[id^=technique-] p {
+    text-align: left;
+    color: black;
+    padding-left: 20px; }
+#sec3 .wrapper {
+  width: 100%;
+  margin: 0 50px; }
 
 #subscribe-input {
   font-size: 1.1em;
@@ -160,9 +168,6 @@ footer {
     font-size: 0.9em; }
   footer #footer-copyright {
     font-size: 0.75em; }
-
-section[id^="sec"] {
-  position: relative; }
 
 #sec1 {
   color: white; }
