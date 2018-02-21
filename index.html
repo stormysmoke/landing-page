@@ -24,6 +24,21 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#subscribe-input").focus(function () {
+        newsletterNotImplemented();
+        document.activeElement.blur();
+      });
+      $("#subscribe-button").click(function() {
+        newsletterNotImplemented();
+      });
+    });
+    function newsletterNotImplemented() {
+      alert("Sorry, the newsletter is not yet implemented. Please come back here soon.");
+    }
+  </script>
 </head>
 
 <body>
