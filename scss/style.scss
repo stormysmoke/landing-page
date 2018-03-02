@@ -103,14 +103,18 @@ $description-height: 200px;
     align-items: center;
     div[id^=feature] {
       text-align: center;
-      width: 300px;
-      height: 100%;
+      width: 30%;
+      height: 80%;
       margin-top: 10%;
+      margin-bottom: 10%;
       padding: 10px;
-      //background: rgba(255, 255, 255, 0.5);
+      padding-top: 20px;
+      background: rgba(0, 255, 0, 0.5);
+      border-radius: 25px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      //color: black;
       img {
         width: 150px;
-        //margin-bottom: 20px;
       }
       p {
         margin: 0;
