@@ -73,6 +73,11 @@ body {
   width: 100%;
   height: calc(100vh - 120px); }
 
+.box-title {
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+  font-size: 1.2em; }
+
 #sec1 {
   text-align: center; }
   #sec1 #logo {
@@ -99,18 +104,21 @@ body {
 
 #sec2 .wrapper {
   width: 90vw;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   #sec2 .wrapper div[id^=feature] {
     text-align: center;
     width: 300px;
-    padding: 20px; }
+    height: 100%;
+    margin-top: 10%;
+    padding: 10px; }
     #sec2 .wrapper div[id^=feature] img {
-      width: 150px;
-      margin-bottom: 20px; }
+      width: 150px; }
     #sec2 .wrapper div[id^=feature] p {
-      margin: 0; }
+      margin: 0;
+      font-size: 1.1em; }
 
 #sec3 div[id^=techniques-row-] {
   display: flex;
@@ -126,10 +134,15 @@ body {
   background: rgba(255, 255, 255, 0.5); }
   #sec3 div[id^=technique-] img {
     width: 75px; }
-  #sec3 div[id^=technique-] p {
-    text-align: left;
+  #sec3 div[id^=technique-] div {
     color: black;
     padding-left: 20px; }
+    #sec3 div[id^=technique-] div h4 {
+      margin-bottom: 0.25em;
+      margin-top: 0; }
+    #sec3 div[id^=technique-] div p {
+      text-align: left;
+      margin: 0; }
 #sec3 .wrapper {
   width: 100%;
   margin: 0 50px; }
@@ -221,5 +234,3 @@ footer {
 
 #sec1 {
   color: white; }
-
-/*# sourceMappingURL=style.css.map */
