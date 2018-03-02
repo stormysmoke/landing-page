@@ -73,11 +73,6 @@ body {
   width: 100%;
   height: calc(100vh - 120px); }
 
-.box-title {
-  margin-top: 0.75em;
-  margin-bottom: 0.5em;
-  font-size: 1.2em; }
-
 #sec1 {
   text-align: center; }
   #sec1 #logo {
@@ -121,6 +116,10 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     #sec2 .wrapper div[id^=feature] img {
       width: 150px; }
+    #sec2 .wrapper div[id^=feature] .box-title {
+      margin-top: 0.75em;
+      margin-bottom: 0.5em;
+      font-size: 1.2em; }
     #sec2 .wrapper div[id^=feature] p {
       margin: 0;
       font-size: 1.1em; }
@@ -154,13 +153,19 @@ body {
 
 #sec4 .wrapper {
   width: 90vw;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: start;
+  padding-top: 20px; }
   #sec4 .wrapper div[id^=member-] {
     text-align: center;
     width: 275px;
-    padding: 20px; }
+    padding: 0 20px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 #sec4 p[class^=member-] {
   margin: 0; }
 #sec4 .member-photo {

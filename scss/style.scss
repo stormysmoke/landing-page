@@ -55,11 +55,6 @@ $title-height: 120px;
   height: calc(100vh - #{$title-height});
 }
 
-.box-title {
-  margin-top: 0.75em;
-  margin-bottom: 0.5em;
-  font-size: 1.2em;
-}
 
 $logo-height: 200px;
 $description-height: 200px;
@@ -116,9 +111,16 @@ $description-height: 200px;
       img {
         width: 150px;
       }
+      .box-title {
+        margin-top: 0.75em;
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+        //color: black;
+      }
       p {
         margin: 0;
         font-size: 1.1em;
+        //color: black;
       }
     }
   }
@@ -169,13 +171,19 @@ $member-padding: 20px;
   .wrapper {
     //background: blue;
     width: 90vw;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    padding-top: 20px;
     div[id^=member-] {
       text-align: center;
       width: $member-width;
-      padding: $member-padding;
+      padding: 0 $member-padding;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       //background: blue;
     }
   }
