@@ -165,7 +165,7 @@ $sec3-margin: 50px;
   }
 }
 
-$member-width: 275px;
+$member-width: 24%;
 $member-padding: 20px;
 #sec4 {
   .wrapper {
@@ -184,6 +184,7 @@ $member-padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       //background: blue;
     }
   }
@@ -191,7 +192,7 @@ $member-padding: 20px;
     margin: 0;
   }
   .member-photo {
-    width: 150px;
+    width: 60%;
     margin-bottom: 20px;
   }
   .member-name {
@@ -210,6 +211,7 @@ $member-padding: 20px;
     height: $icon-height;
     margin-top: 15px;
     display: flex;
+    //background: red;
     justify-content: center;
       .contact-icon {
         height: $icon-height;
