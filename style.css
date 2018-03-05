@@ -111,7 +111,7 @@ body {
     margin-bottom: 10%;
     padding: 10px;
     padding-top: 20px;
-    background: rgba(0, 255, 0, 0.5);
+    background: rgba(255, 120, 69, 0.5);
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     #sec2 .wrapper div[id^=feature] img {
@@ -244,3 +244,5 @@ footer {
 
 #sec1 {
   color: white; }
+
+/*# sourceMappingURL=style.css.map */
