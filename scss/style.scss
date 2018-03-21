@@ -239,11 +239,11 @@ $subscribe-height: 3em;
     align-items: center;
     div {
       text-align: center;
-      #subscribe-input {
+      #subscribe-email {
         font-size: $subscribe-font-size;
         padding: 0 $subscribe-padding;
         outline: none;
-        width: 18em;
+        width: 20em;
         border: none;
         height: $subscribe-height;
       }

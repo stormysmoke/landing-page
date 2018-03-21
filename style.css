@@ -198,11 +198,11 @@ body {
   align-items: center; }
   #sec5 .wrapper div {
     text-align: center; }
-    #sec5 .wrapper div #subscribe-input {
+    #sec5 .wrapper div #subscribe-email {
       font-size: 1.1em;
       padding: 0 15px;
       outline: none;
-      width: 18em;
+      width: 20em;
       border: none;
       height: 3em; }
     #sec5 .wrapper div #subscribe-button {
