@@ -79,6 +79,26 @@ body {
   width: 100%;
   height: calc(100vh - 120px); }
 
+.scroll-down {
+  position: relative; }
+
+@keyframes bouncing {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: 15px; }
+  100% {
+    bottom: 0; } }
+#scroll-down-arrow {
+  animation: bouncing 1s infinite ease-in-out;
+  bottom: 0;
+  display: block;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px; }
+
 #sec1 {
   text-align: center;
   padding: 0 20px; }
@@ -101,7 +121,8 @@ body {
     height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding-top: calc(200px/4);
     margin: 0; }
 
 #sec-embeddings .wrapper {

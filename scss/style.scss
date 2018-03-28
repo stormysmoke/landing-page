@@ -55,6 +55,27 @@ $title-height: 120px;
   height: calc(100vh - #{$title-height});
 }
 
+.scroll-down {
+    position: relative;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 15px;}
+    100% {bottom: 0;}
+}
+
+#scroll-down-arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
 
 $logo-height: 200px;
 $description-height: 200px;
@@ -78,13 +99,16 @@ $description-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    //background: blue;
   }
   #slogan-description {
+    //background: red;
     font-size: 1.15em;
     height: $description-height;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding-top: calc(#{$description-height}/4);
     margin: 0;
   }
 }
